@@ -28,7 +28,6 @@ namespace SplitCsvFile
                 FilePath = args[0].ToString();
 
                 var RecordCount = (double)File.ReadAllLines(FilePath).Count();
-                var hoge = RecordCount / MaxFileRecord;
                 var LoopCount = Math.Ceiling(RecordCount / (double)MaxFileRecord);
 
                 Console.WriteLine("件数は" + RecordCount);
